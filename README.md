@@ -27,6 +27,17 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
 
 ---
 
+### 🔧 Prerequisites
+
+- **C++11 or newer compiler** (e.g., g++, clang++, or MSVC)
+- **OpenMP** support for parallel execution
+  - For GCC/MinGW: use `-fopenmp`
+  - For MSVC: use `/openmp`
+- **Make** (optional)
+- **Python 3** with `matplotlib` and `numpy` (for visualization)
+  ```bash
+  pip install matplotlib numpy
+
 ## 📁 File Structure
 
 ```text
