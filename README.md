@@ -27,7 +27,7 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
 
 ---
 
-### 🔧 Prerequisites
+## 🔧 Prerequisites
 
 - **C++11 or newer compiler** (e.g., g++, clang++, or MSVC)
 - **OpenMP** support for parallel execution
