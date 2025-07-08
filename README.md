@@ -37,7 +37,7 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
 - **Python 3** with `matplotlib` and `numpy` (for visualization)
   ```bash
   pip install matplotlib numpy
-
+---
 ## 📁 File Structure
 
 ```text
