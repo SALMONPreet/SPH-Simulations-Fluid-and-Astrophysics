@@ -161,7 +161,7 @@ void initializeParticles(int numLength = 25, int numWidth = 5) {
         }
     }
 
-    // Rod-shaped cloud (unchanged)
+    // Rod-shaped cloud 
     int rodLength = 50;
     for (int i = 0; i < 2*rodLength / 1.5; ++i) {
         for (int j = 0; j < 16; ++j) {
