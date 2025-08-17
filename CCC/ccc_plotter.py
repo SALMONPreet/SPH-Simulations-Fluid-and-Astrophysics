@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from scipy.ndimage import gaussian_filter
 
-# Load data (columns: x, y, cloud)
+
 data = np.loadtxt("simulation_output.txt")
 x = data[:, 0]  # x position
 y = data[:, 1]  # y position
-cloud = data[:, 2]  # Cloud identifier (optional)
+cloud = data[:, 2]  # Cloud identifier 
 
 # Constants
 num_particles = 100000  # Total particles per frame
@@ -15,7 +15,7 @@ num_frames = len(data) // num_particles
 
 # Grid parameters for heatmap
 grid_size = 1000
-extent = [-3000, 1500, -500, 500]  # Doubled field of view
+extent = [-3000, 1500, -500, 500]  
 
 # Set up plot
 fig, ax = plt.subplots(figsize=(6, 6))
@@ -25,7 +25,7 @@ img = ax.imshow(np.zeros((grid_size, grid_size)),
                 cmap='coolwarm',
                 vmin=0, vmax=2.5)  # Adjust vmax to control brightness
 
-ax.set_xlim(-3000, 1500)  # Adjusted for larger scene
+ax.set_xlim(-3000, 1500)  
 ax.set_ylim(-500, 500)
 ax.set_title("Cloud-Cloud Collision Simulation")
 
@@ -41,9 +41,9 @@ def update(frame):
         bins=grid_size,
         range=[[-3000,1500], [-500, 500]]
     )
-    blurred = gaussian_filter(heatmap, sigma=12)  # Increased blur for smoothness
+    blurred = gaussian_filter(heatmap, sigma=12)  # Increase blur for smoothness
 
-    img.set_data(blurred.T)  # Transpose to match the image layout
+    img.set_data(blurred.T) 
     return img,
 
 ani = animation.FuncAnimation(
@@ -51,8 +51,9 @@ ani = animation.FuncAnimation(
     blit=True, interval=10
 )
 
-# To save as a GIF, uncomment this line:
+# To save as a GIF, uncomment the line below:
 #ani.save("cloud_collision_blur.gif", writer='pillow', fps=40, dpi=180)
 
 plt.tight_layout()
 plt.show()
+
