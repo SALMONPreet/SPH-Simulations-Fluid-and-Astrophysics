@@ -57,23 +57,23 @@ void applyBoundaryConditions() {
         //if(positionsX[i] >= 2.5f && positionsX[i] <= 4.0f && positionsY[i] <= 0.0f ) {
           //  continue;
         //}
-        if (positionsX[i] <= 0.0f) {           //
-            positionsX[i] = 0.0f;              //
+        if (positionsX[i] <= 0.0f) {            //
+            positionsX[i] = 0.0f;               //
             velocitiesX[i] = -velocitiesX[i];   // Reflect velocity
-        }                                      //
-        
-        if (positionsX[i] >= boxSize) {        // 
-            positionsX[i] = boxSize;           //
+        }                                       //
+                                                //
+        if (positionsX[i] >= boxSize) {         // 
+            positionsX[i] = boxSize;            //
             velocitiesX[i] = -velocitiesX[i] ;  //
-        }                                      //
-                                               //
-        if (positionsY[i] <= 0.0f) {           //
-            positionsY[i] = 0.0f;              //
-            velocitiesY[i] = -velocitiesY[i]  ;//
-        }                                      //
-        if (positionsY[i] >= boxSize) {        //
-            positionsY[i] = boxSize;           //
-            velocitiesY[i] = -velocitiesY[i]  ;//
+        }                                       //
+                                                //
+        if (positionsY[i] <= 0.0f) {            //
+            positionsY[i] = 0.0f;               //
+            velocitiesY[i] = -velocitiesY[i]  ; //
+        }                                       //
+        if (positionsY[i] >= boxSize) {         //
+            positionsY[i] = boxSize;            //
+            velocitiesY[i] = -velocitiesY[i]  ; //
         }
     }
 }
