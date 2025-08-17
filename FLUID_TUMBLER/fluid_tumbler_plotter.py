@@ -5,18 +5,18 @@ import numpy as np
 # Configuration
 num_particles = 600
 box_size = 15.0
-log_interval = 10  # Data was saved every 10 simulation steps
+log_interval = 10  # Data is saved every 10 simulation steps
 save_steps = [10,50,200, 1000]
 save_frames = [step // log_interval for step in save_steps]
 
-# Load data
+
 with open("simulation_output.txt", "r") as f:
     lines = f.readlines()
 
-# Each frame has num_particles lines
+
 frames = len(lines) // num_particles
 
-# Reshape data into (frames, num_particles, 2)
+
 data = np.array([[float(value) for value in line.split()] for line in lines])
 data = data.reshape((frames, num_particles, 2))
 
@@ -30,7 +30,7 @@ ax.set_title("2D Fluid Simulation")
 ax.set_xlabel("X")
 ax.set_ylabel("Y")
 
-# Update function for animation
+
 def update(frame):
     positions = data[frame]
     scat.set_offsets(positions)
@@ -51,3 +51,4 @@ ani = animation.FuncAnimation(
 #ani.save("cloud_collision_blur.gif", writer='pillow', fps=40, dpi=180)
 plt.tight_layout()
 plt.show()
+
