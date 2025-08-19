@@ -48,7 +48,9 @@ def update(frame):
 ani = animation.FuncAnimation(
     fig, update, frames=frames, interval=30, blit=True
 )
+# uncomment to save as GIF
 #ani.save("cloud_collision_blur.gif", writer='pillow', fps=40, dpi=180)
 plt.tight_layout()
 plt.show()
+
 
