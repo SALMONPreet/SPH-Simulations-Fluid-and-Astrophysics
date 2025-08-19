@@ -199,7 +199,7 @@ int main() {
         computeDensities();
         computeForces();
         updatePositions();
-
+        // out put data every 10 steps
         if (step % 10 == 0) {
             for (auto &p : particles) {
                 outFile << p.x << " " << p.y << " " << p.cloud << "\n";
@@ -217,3 +217,4 @@ int main() {
     return 0;
     
 }   
+
