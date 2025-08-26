@@ -52,9 +52,13 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
 ## 📁 File Structure
 
 ```text
-├── ccc.cpp                    # Main SPH simulation code (cloud-cloud collision)
-├── ccc_plotter.py             # Python code for visualisation of ccc (to be kept in same directory as ccc.cpp)
-├── fluid_tumbler.cpp          # Optional fluid containment simulation 
-├── fluid_tumbler_plotter.py   # Python code for visualisation of fluid_tumbler (to be kept in same directory as fluid_tumbler.cpp)
-├── plots                      # GIFs of density maps at various time steps are provided in "visual" folder
-├── academic resources         # various academic resources used for building this project are provided in "resources" folder
+├── CCC
+    ├── ccc.cpp                    # Main SPH simulation code (cloud-cloud collision)
+    ├── ccc_plotter.py             # Python code for visualisation of ccc (to be kept in same directory as ccc.cpp)
+
+├── FLUID_TUMBLER
+    ├── fluid_tumbler.cpp          # Optional fluid containment simulation 
+    ├── fluid_tumbler_plotter.py   # Python code for visualisation of fluid_tumbler (to be kept in same directory as fluid_tumbler.cpp)
+
+├── plots                          # GIFs of density maps at various time steps are provided in "visual" folder
+├── academic resources             # various academic resources used for building this project are provided in "resources" folder
