@@ -1,4 +1,8 @@
-![cccLogo](https://raw.githubusercontent.com/SALMONPreet/SPH-Simulations-Fluid-and-Astrophysics/main/ccclogo.png "CCClogo")
+![cccLogo](https://github.com/user-attachments/assets/96086792-39f4-467c-be08-e3cc3e46b8aa "CCClogo")
+
+
+
+
 
 # Smoothed Particle Hydrodynamics Simulations – Fluid and Astrophysics🌌
 
