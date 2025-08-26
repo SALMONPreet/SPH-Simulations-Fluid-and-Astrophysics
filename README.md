@@ -40,6 +40,10 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
 - **OpenMP** support for parallel execution
   - For GCC/MinGW: use `-fopenmp`
   - For MSVC: use `/openmp`
+  ```bash
+  # To compile 
+  g++ -o simulation ccc.cpp -fopenmp -O3 -march=native -ffast-math
+
 - **Make** (optional)
 - **Python 3** with `matplotlib` and `numpy` (for visualization)
   ```bash
