@@ -61,4 +61,5 @@ A more advanced simulation where a stationary V-shaped cloud and a moving rod-sh
     ├── fluid_tumbler_plotter.py   # Python code for visualisation of fluid_tumbler (to be kept in same directory as fluid_tumbler.cpp)
 
 ├── visual                         # GIFs of density maps at various time steps are provided in "visual" folder
+
 ├── resources                      # various academic resources used for building this project are provided in "resources" folder
