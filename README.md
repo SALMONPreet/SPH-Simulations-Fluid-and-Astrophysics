@@ -19,7 +19,7 @@ The simulations are divided into two parts:
 A basic test case simulating water-like fluid behavior in a 2D container. This was implemented to validate the SPH method and test pressure dynamics and particle stability under boundary conditions.
 
 ### 2. **Cloud-Cloud Collision (Astrophysics Application)**
-A more advanced simulation where a stationary V-shaped cloud and a moving rod-shaped cloud collide in 2D. The model tracks how shock compression and cloud interaction lead to the formation of dense clumps—potential precursors to star formation.
+A more advanced simulation where a stationary V-shaped cloud and a moving rod-shaped cloud collide in 2D. The model tracks how shock compression and cloud interaction lead to the formation of dense clumps, potential precursors to star formation.
 
 ---
 
