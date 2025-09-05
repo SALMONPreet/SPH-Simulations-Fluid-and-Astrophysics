@@ -6,6 +6,7 @@
 #include <omp.h>
 #include <chrono>  
 #include <algorithm>
+
 const float PI = 3.14159265359f;
 const float G = 0.05;
 const float smoothingRadius = 0.01f;
@@ -217,4 +218,5 @@ int main() {
     return 0;
     
 }   
+
 
