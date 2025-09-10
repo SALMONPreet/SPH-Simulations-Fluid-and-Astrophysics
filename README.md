@@ -7,7 +7,7 @@
 # Smoothed Particle Hydrodynamics Simulations – Fluid and Astrophysics🌌
 
 # ![CCCsim logo](https://github.com/user-attachments/assets/769bd30a-241c-4b80-9fa0-56b6213546a2 "CCCsim")
-This repository contains 2D Smoothed Particle Hydrodynamics (SPH) simulations written in C++, developed as part of an MSc project at **Panjab University**. The project explores SPH's versatility by applying it to two very different domains: classical fluid dynamics and astrophysical gas interactions.
+This repository contains 2D Smoothed Particle Hydrodynamics (SPH) simulations written in C++, developed as part of an [MSc project](https://doi.org/10.5281/zenodo.15837596) at **Panjab University**. The project explores SPH's versatility by applying it to two very different domains: classical fluid dynamics and astrophysical gas interactions.
 
 ---
 
